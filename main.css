@@ -35,19 +35,20 @@ body {
 }
 
 .component {
+  position: relative;
   max-width: 73rem;
   height: 28rem;
   background-color: white;
   border-radius: 1rem;
   margin: 0 auto;
-  overflow: hidden;
   display: grid;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
 }
 .component__img {
-  max-width: 28.5rem;
   overflow: hidden;
+  border-radius: 1rem 0 0 1rem;
+  max-width: 28.5rem;
 }
 .component__img img {
   height: 28rem;
@@ -72,7 +73,9 @@ body {
   margin-bottom: 2rem;
 }
 .component__content--author {
-  display: flex;
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-columns: min-content 1fr min-content;
   align-items: center;
 }
 .component__content--author-avatar {
@@ -86,7 +89,6 @@ body {
   font-weight: 700;
   letter-spacing: 0.121875px;
   color: #48556a;
-  margin-right: 16rem;
 }
 .component__content--author-name span {
   font-weight: 500;
@@ -99,4 +101,65 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
+  cursor: pointer;
+  fill: #6e8098;
+  transition: all 0.2s;
+}
+.component__content--author-share:hover {
+  background-color: #6d7f97;
+  fill: white;
+}
+.component__content--author-share-icon {
+  width: 1.5rem;
+  height: 1.3rem;
+  pointer-events: none;
+}
+
+.share {
+  display: none;
+  position: absolute;
+  top: 13rem;
+  right: -6.7rem;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+}
+.share__bubble {
+  position: relative;
+  background: #48556a;
+  border-radius: 1rem;
+  padding: 1.8rem 3.7rem;
+  display: flex;
+  gap: 1.6rem;
+}
+.share__bubble--text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.5rem;
+  color: #9eafc2;
+}
+.share__bubble img {
+  cursor: pointer;
+}
+.share__bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 1rem solid transparent;
+  border-top-color: #48556a;
+  border-bottom: 0;
+  margin-left: -1rem;
+  margin-bottom: -1rem;
+  box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+}
+
+.show {
+  display: block;
+}
+
+.active {
+  background-color: #6d7f97;
+  fill: white;
 }/*# sourceMappingURL=main.css.map */
