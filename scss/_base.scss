@@ -1,0 +1,40 @@
+// Colors
+$color-blue-dark: #6d7f97;
+$color-grayish-blue: #9eafc2;
+$color-grayish-blue-dark: #48556a;
+$color-grayish-blue-light: #ecf2f8;
+
+// Media
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 1439px) {
+      @content;
+    }
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
