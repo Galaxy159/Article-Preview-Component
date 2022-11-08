@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   font-size: 1.3rem;
+  background-color: #f2f2f2;
 }
 
 .attribution {
@@ -23,4 +24,79 @@ body {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+.container {
+  max-width: 144rem;
+  height: 80rem;
+  margin: 0 auto;
+  padding-block: 26rem;
+  background-color: #ecf2f8;
+}
+
+.component {
+  max-width: 73rem;
+  height: 28rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+}
+.component__img {
+  max-width: 28.5rem;
+  overflow: hidden;
+}
+.component__img img {
+  height: 28rem;
+}
+.component__content {
+  padding: 3.2rem 4rem;
+}
+.component__content--headline {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0.25px;
+  color: #48556a;
+  margin-bottom: 1.2rem;
+}
+.component__content--text {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.121875px;
+  color: #6d7f97;
+  margin-bottom: 2rem;
+}
+.component__content--author {
+  display: flex;
+  align-items: center;
+}
+.component__content--author-avatar {
+  height: 4rem;
+  margin-right: 1.6rem;
+  border-radius: 50%;
+}
+.component__content--author-name {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.121875px;
+  color: #48556a;
+  margin-right: 16rem;
+}
+.component__content--author-name span {
+  font-weight: 500;
+  color: #9eafc2;
+}
+.component__content--author-share {
+  padding: 1rem;
+  background-color: #ecf2f8;
+  border-radius: 50%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
