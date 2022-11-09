@@ -51,6 +51,7 @@ body {
   display: grid;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
 }
 @media (max-width: 870px) {
   .component {
